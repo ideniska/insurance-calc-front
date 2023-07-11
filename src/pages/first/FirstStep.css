@@ -1,0 +1,108 @@
+.calc__container {
+    margin: 0 auto;
+    padding: 64px 140px 52px 140px;
+    box-shadow: 0 12px 12px rgb(0 0 0 / 10%), 0 12px 12px rgb(0 0 0 / 4%), 0 12px 20px rgb(0 0 0 / 4%), 0 6px 5px rgb(0 0 0 / 4%), inset 0 5px 0 #3e4757;
+    background-color: #fff;
+    border-radius: 24px;
+    width: 824px;
+}
+
+.calc__body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.calc__form {
+    width: 536px;
+}
+
+.calc__progress {
+    margin-left: 40px;
+    width: 248px;
+}
+
+.calc__progress_total {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.input-group {
+    width: 100%;
+}
+
+.btn {
+    background-color: #1CB0DC !important;
+    border-style: none !important;
+    width: 100px !important;
+}
+
+.button-group {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+}
+
+.left-button {
+    order: 1;
+}
+
+.right-button {
+    order: 2;
+}
+
+.phone-input {
+    width: 345px !important;
+
+    border-radius: 6px !important;
+}
+
+.phone-input-container {
+    margin-bottom: 20px !important;
+}
+
+/* On screens that are 415px wide or less */
+@media only screen and (max-width: 415px) {
+    .calc__container {
+        margin: 0;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 0px 30px 30px 30px;
+        width: auto;
+    }
+
+    .calc__body {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+    .calc__form {
+        width: auto;
+    }
+
+    .calc__progress {
+        margin-left: 0;
+        width: auto;
+        padding-bottom: 30px;
+    }
+
+    .calc__progress_total {
+        display: none;
+        /* display: flex;
+        flex-direction: row; */
+    }
+
+    .calc__progress_total>h3 {
+        display: none;
+        /* font-size: medium;
+        margin-bottom: 1rem;
+        padding-left: 5px; */
+    }
+
+    .calc__progress>p {
+        display: none;
+    }
+}
